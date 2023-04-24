@@ -74,9 +74,7 @@ border-bottom-right-radius: .3rem;
                           <p class="mb-0 me-2">Don't have an account?</p>
 
                           <button
-                          type="button" class="btn btn-outline-danger"
-
-                          onclick="window.location='{{ url("signup")}}'"
+                          type="button" class="btn btn-outline-danger" onclick="window.location='{{ url("signup")}}'"
                           >Create new</button>
 
                         </div>

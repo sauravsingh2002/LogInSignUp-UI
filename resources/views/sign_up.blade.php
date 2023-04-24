@@ -80,7 +80,9 @@ border-bottom-right-radius: .3rem;
 
                         <div class="d-flex align-items-center justify-content-center pb-4">
                           <p class="mb-0 me-2">Already have'an account</p>
-                          <button type="button" class="btn btn-outline-danger">Sign in</button>
+                          <button type="button"
+                          onclick="window.location='{{ url("login")}}'"
+                          class="btn btn-outline-danger">Sign in</button>
                         </div>
 
                       </form>

@@ -12,12 +12,12 @@ class LoginController extends Controller
     }
 
     public function signup(){
-        return view('signin');
+        return view('sign_up');
     }
 
 
     public function signin(){
-        return view('signin');
+        return view('sign_up');
     }
 
 

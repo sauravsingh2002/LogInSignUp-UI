@@ -78,9 +78,9 @@ border-bottom-right-radius: .3rem;
                         </div>
 
                         <div class="text-center pt-1 mb-5 pb-1">
-                            <button class="btn"><a href="{{ url('login') }}">Delete User</a></button>
 
-                            <button class="btn btn-primary btn-block fa-lg btn-lg gradient-custom-2 mb-3" type="button">Update Now
+                            <button onclick="window.location='{{ url("login")}}'"
+                            class="btn btn-primary btn-block fa-lg btn-lg gradient-custom-2 mb-3" type="button">Update Now
                         </button>
                           {{-- <a class="text-muted" href="#!">Forgot password?</a> --}}
                         </div>
