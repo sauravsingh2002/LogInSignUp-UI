@@ -37,8 +37,6 @@
 </head>
 
 <body>
-
-
     <section class="h-100 gradient-form " style="background-color: #eeeeee05;">
         <div class="container py-2 h-100 ">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -53,11 +51,13 @@
                                         <h4 class="mt-1 mb-5 pb-1">Sign Up</h4>
                                     </div>
 
-                                    <form method="POST" action="">
+                                    <form method="POST" action="/signup">
+                                        {{ csrf_field() }}
+
                                         {{-- <p>Please sign up to your account</p> --}}
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example11">Name</label>
-                                            <input type="email" id="name" name="name" class="form-control"
+                                            <input type="text" id="name" name="name" class="form-control"
                                                 placeholder="Enter your name" />
                                         </div>
 
@@ -82,11 +82,11 @@
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center pb-4">
                                             <p class="mb-0 me-2">Already have'an account</p>
-                                            <button type="button" onclick="window.location='{{ url('login')}}'"
+                                            <button type="submit"
                                                 class="btn btn-outline-danger">Sign in</button>
                                         </div>
-
                                     </form>
+
 
                                 </div>
                             </div>

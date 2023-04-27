@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -29,10 +31,10 @@ class LoginController extends Controller
 
         auth()->login($user);
 
-        return redirect()->to('login');
+        // return redirect()->to('login');
 
 
-        return view('sign_up');
+        return view('login');
     }
 
 
