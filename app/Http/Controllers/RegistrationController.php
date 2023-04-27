@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SignUpController extends Controller
+
+class RegistrationController extends Controller
 {
-    //
-    public function create()
+  public function create()
   {
     return view('sign_up.create');
   }  //
@@ -23,6 +23,6 @@ class SignUpController extends Controller
 
         auth()->login($user);
 
-        return redirect()->to('games');
+        return redirect()->to('/games');
     }
 }

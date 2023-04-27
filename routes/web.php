@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SignUpController;
 
 
 
@@ -23,5 +24,12 @@ Route::get('/', function () {
 
 Route::get('/login',[LoginController::class,'login']);
 Route::get('/forgotpassword',[LoginController::class,'forgotpassword']);
-Route::get('/signup',[LoginController::class,'signup']);
+Route::get('/rigester',[LoginController::class,'rigester']);
+// Route::get('/signup',[SignUpController::class,'store']);
+
+// Route::get('/register', 'RegistrationController@create');
+
+
+// Route::get('/signup', 'SignUpController@store');
+
 

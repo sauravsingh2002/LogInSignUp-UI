@@ -67,15 +67,17 @@ border-bottom-right-radius: .3rem;
 
                         <div class="text-center pt-1 mb-5 pb-1">
                           <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Login</button>
-                          <a href="{{url('forgotpassword')}}" class="text-muted" href="#!">Forgot password?</a>
+                          <a href="{{url('forgotpassword')}}" class="text-muted">Forgot password?</a>
                         </div>
 
                         <div class="d-flex align-items-center justify-content-center pb-4">
                           <p class="mb-0 me-2">Don't have an account?</p>
 
                           <button
-                          type="button" class="btn btn-outline-danger" onclick="window.location='{{ url("signup")}}'"
-                          >Create new</button>
+                          onclick="window.location='{{ url('rigester')}}'"
+
+                          type="button" class="btn btn-outline-danger"
+                            >Create new</button>
 
                         </div>
 
@@ -86,9 +88,10 @@ border-bottom-right-radius: .3rem;
                   <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                     <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                       <h4 class="mb-4">We are more than just a company</h4>
-                      <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="small mb-0">A company is a legal entity formed by a group of individuals
+                        to engage in and operate a business enterprise in a commercial or industrial
+                        capacity. A company's business line depends on its structure, which can range
+                        from a partnership to a proprietorship, or even a corporation.</p>
                     </div>
                   </div>
                 </div>

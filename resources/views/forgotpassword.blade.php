@@ -79,7 +79,7 @@ border-bottom-right-radius: .3rem;
 
                         <div class="text-center pt-1 mb-5 pb-1">
 
-                            <button onclick="window.location='{{ url("login")}}'"
+                            <button onclick="window.location='{{ url('login')}}'"
                             class="btn btn-primary btn-block fa-lg btn-lg gradient-custom-2 mb-3" type="button">Update Now
                         </button>
                           {{-- <a class="text-muted" href="#!">Forgot password?</a> --}}

@@ -11,7 +11,27 @@ class LoginController extends Controller
         return view('login');
     }
 
+    public function rigester(){
+        return view('rigester');
+    }
+
     public function signup(){
+        // in sign up time
+
+
+        $this->validate(request(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+
+        $user = User::create(request(['name', 'email', 'password']));
+
+        auth()->login($user);
+
+        return redirect()->to('login');
+
+
         return view('sign_up');
     }
 
