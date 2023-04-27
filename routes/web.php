@@ -19,18 +19,14 @@ use App\Http\Controllers\SignUpController;
 */
 
 Route::get('/', function () {
-    return view('forgotpassword');
+    return view('login');
 });
 
 Route::get('/login',[LoginController::class,'login']);
 Route::get('/forgotpassword',[LoginController::class,'forgotpassword']);
 Route::get('/rigester',[LoginController::class,'rigester']);
 Route::post('/signup',[LoginController::class,'signup']);
-// Route::get('/signup',[SignUpController::class,'store']);
-
-// Route::get('/register', 'RegistrationController@create');
 
 
-// Route::get('/signup', 'SignUpController@store');
 
 
